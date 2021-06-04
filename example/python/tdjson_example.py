@@ -133,5 +133,6 @@ while True:
                 td_send({'@type': 'checkAuthenticationPassword', 'password': password})
 
         # handle an incoming update or an answer to a previously sent request
+        print("---")
         print(str(event).encode('utf-8'))
         sys.stdout.flush()
