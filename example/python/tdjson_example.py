@@ -63,6 +63,8 @@ print(str(td_execute({'@type': 'setLogVerbosityLevel', 'new_verbosity_level': 1,
 # create client
 client_id = _td_create_client_id()
 
+print("client_id: " + str(client_id))
+
 # simple wrappers for client usage
 def td_send(query):
     query = json.dumps(query).encode('utf-8')
